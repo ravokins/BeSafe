@@ -7,15 +7,17 @@ public class Score : MonoBehaviour
 { //
     public Text scoreText;
     private float score;
-
+  
     // Update is called once per frame
     void Update()
     {
         if(GameObject.FindGameObjectWithTag("Player") != null)
         {
-            score += 1 * Time.deltaTime;
+            score += 2000 * Time.deltaTime;
             scoreText.text = ((int)score).ToString();
+           
+           
         }
-        
+      
     }
 }
